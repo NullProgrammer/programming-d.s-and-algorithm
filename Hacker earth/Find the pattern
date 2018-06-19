@@ -1,0 +1,21 @@
+ #include <stdio.h>
+
+int main()
+{
+    int i,n;
+   long long unsigned int lar,sm,a[10000];
+    scanf("%d",&n);
+    printf("\n");
+    for(i=0;i<n;++i)
+       scanf("%llud",&a[i]);
+       lar=sm=a[0];
+    for(i=1;i<n;++i)
+      {
+        if(lar<a[i])
+        lar=a[i];
+        if(sm>a[i])
+         sm=a[i];
+      }
+    printf("%lld",sm+lar);
+    return 0;
+}
