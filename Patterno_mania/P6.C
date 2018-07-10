@@ -2,6 +2,9 @@
 #include<conio.h>
 void main()
 {
+  
+  //Inverted pyramid with numbers
+  
 int i,j,rows;
 clrscr();
 printf("enter the number of rows");
